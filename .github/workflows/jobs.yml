@@ -1,0 +1,13 @@
+name: workflows
+on: push
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: pokaz py
+             run: python --version
+    job2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: wlacz linter
+             run: pylint ./app.py
